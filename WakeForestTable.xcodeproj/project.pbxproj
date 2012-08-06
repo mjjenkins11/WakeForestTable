@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9493F3C515D00EDA007DC473 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9493F3C415D00EDA007DC473 /* UIKit.framework */; };
+		9493F3C715D00EDA007DC473 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9493F3C615D00EDA007DC473 /* Foundation.framework */; };
+		9493F3C915D00EDA007DC473 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9493F3C815D00EDA007DC473 /* CoreGraphics.framework */; };
+		9493F3CF15D00EDA007DC473 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9493F3CD15D00EDA007DC473 /* InfoPlist.strings */; };
+		9493F3D115D00EDA007DC473 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9493F3D015D00EDA007DC473 /* main.m */; };
+		9493F3D515D00EDA007DC473 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9493F3D415D00EDA007DC473 /* AppDelegate.m */; };
+		9493F3D815D00EDA007DC473 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9493F3D615D00EDA007DC473 /* MainStoryboard_iPhone.storyboard */; };
+		9493F3E915D0100E007DC473 /* WakeForestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9493F3E815D0100E007DC473 /* WakeForestTableViewController.m */; };
+		9493F3FB15D01849007DC473 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9493F3FA15D01849007DC473 /* MediaPlayer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9493F3C015D00EDA007DC473 /* WakeForestTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakeForestTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9493F3C415D00EDA007DC473 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9493F3C615D00EDA007DC473 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9493F3C815D00EDA007DC473 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9493F3CC15D00EDA007DC473 /* WakeForestTable-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WakeForestTable-Info.plist"; sourceTree = "<group>"; };
+		9493F3CE15D00EDA007DC473 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9493F3D015D00EDA007DC473 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9493F3D215D00EDA007DC473 /* WakeForestTable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WakeForestTable-Prefix.pch"; sourceTree = "<group>"; };
+		9493F3D315D00EDA007DC473 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9493F3D415D00EDA007DC473 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9493F3D715D00EDA007DC473 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		9493F3E715D0100E007DC473 /* WakeForestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WakeForestTableViewController.h; sourceTree = "<group>"; };
+		9493F3E815D0100E007DC473 /* WakeForestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WakeForestTableViewController.m; sourceTree = "<group>"; };
+		9493F3FA15D01849007DC473 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9493F3BD15D00EDA007DC473 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9493F3FB15D01849007DC473 /* MediaPlayer.framework in Frameworks */,
+				9493F3C515D00EDA007DC473 /* UIKit.framework in Frameworks */,
+				9493F3C715D00EDA007DC473 /* Foundation.framework in Frameworks */,
+				9493F3C915D00EDA007DC473 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9493F3B515D00ED9007DC473 = {
+			isa = PBXGroup;
+			children = (
+				9493F3CA15D00EDA007DC473 /* WakeForestTable */,
+				9493F3C315D00EDA007DC473 /* Frameworks */,
+				9493F3C115D00EDA007DC473 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9493F3C115D00EDA007DC473 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9493F3C015D00EDA007DC473 /* WakeForestTable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9493F3C315D00EDA007DC473 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9493F3FA15D01849007DC473 /* MediaPlayer.framework */,
+				9493F3C415D00EDA007DC473 /* UIKit.framework */,
+				9493F3C615D00EDA007DC473 /* Foundation.framework */,
+				9493F3C815D00EDA007DC473 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9493F3CA15D00EDA007DC473 /* WakeForestTable */ = {
+			isa = PBXGroup;
+			children = (
+				9493F3D315D00EDA007DC473 /* AppDelegate.h */,
+				9493F3D415D00EDA007DC473 /* AppDelegate.m */,
+				9493F3D615D00EDA007DC473 /* MainStoryboard_iPhone.storyboard */,
+				9493F3E715D0100E007DC473 /* WakeForestTableViewController.h */,
+				9493F3E815D0100E007DC473 /* WakeForestTableViewController.m */,
+				9493F3CB15D00EDA007DC473 /* Supporting Files */,
+			);
+			path = WakeForestTable;
+			sourceTree = "<group>";
+		};
+		9493F3CB15D00EDA007DC473 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9493F3CC15D00EDA007DC473 /* WakeForestTable-Info.plist */,
+				9493F3CD15D00EDA007DC473 /* InfoPlist.strings */,
+				9493F3D015D00EDA007DC473 /* main.m */,
+				9493F3D215D00EDA007DC473 /* WakeForestTable-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9493F3BF15D00EDA007DC473 /* WakeForestTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9493F3E115D00EDA007DC473 /* Build configuration list for PBXNativeTarget "WakeForestTable" */;
+			buildPhases = (
+				9493F3BC15D00EDA007DC473 /* Sources */,
+				9493F3BD15D00EDA007DC473 /* Frameworks */,
+				9493F3BE15D00EDA007DC473 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WakeForestTable;
+			productName = WakeForestTable;
+			productReference = 9493F3C015D00EDA007DC473 /* WakeForestTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9493F3B715D00ED9007DC473 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 9493F3BA15D00ED9007DC473 /* Build configuration list for PBXProject "WakeForestTable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9493F3B515D00ED9007DC473;
+			productRefGroup = 9493F3C115D00EDA007DC473 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9493F3BF15D00EDA007DC473 /* WakeForestTable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9493F3BE15D00EDA007DC473 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9493F3CF15D00EDA007DC473 /* InfoPlist.strings in Resources */,
+				9493F3D815D00EDA007DC473 /* MainStoryboard_iPhone.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9493F3BC15D00EDA007DC473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9493F3D115D00EDA007DC473 /* main.m in Sources */,
+				9493F3D515D00EDA007DC473 /* AppDelegate.m in Sources */,
+				9493F3E915D0100E007DC473 /* WakeForestTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9493F3CD15D00EDA007DC473 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9493F3CE15D00EDA007DC473 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9493F3D615D00EDA007DC473 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9493F3D715D00EDA007DC473 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9493F3DF15D00EDA007DC473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9493F3E015D00EDA007DC473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9493F3E215D00EDA007DC473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WakeForestTable/WakeForestTable-Prefix.pch";
+				INFOPLIST_FILE = "WakeForestTable/WakeForestTable-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9493F3E315D00EDA007DC473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WakeForestTable/WakeForestTable-Prefix.pch";
+				INFOPLIST_FILE = "WakeForestTable/WakeForestTable-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9493F3BA15D00ED9007DC473 /* Build configuration list for PBXProject "WakeForestTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9493F3DF15D00EDA007DC473 /* Debug */,
+				9493F3E015D00EDA007DC473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9493F3E115D00EDA007DC473 /* Build configuration list for PBXNativeTarget "WakeForestTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9493F3E215D00EDA007DC473 /* Debug */,
+				9493F3E315D00EDA007DC473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9493F3B715D00ED9007DC473 /* Project object */;
+}
