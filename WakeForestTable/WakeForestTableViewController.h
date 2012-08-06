@@ -11,6 +11,6 @@
 
 @interface WakeForestTableViewController : UITableViewController
 
-@property (nonatomic, strong) NSArray *songTitles; //array of song titles available
+@property (nonatomic, strong) NSArray *songsFromUserDevice; //an array of MPMediaItems retrieved from the user's device
 
 @end

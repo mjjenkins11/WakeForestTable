@@ -3,7 +3,7 @@
 //  WakeForestTable
 //
 //  Created by Melissa Jenkins on 8/6/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Synaptian. All rights reserved.
 //
 
 #import "WakeForestTableViewController.h"
@@ -14,15 +14,15 @@
 
 @implementation WakeForestTableViewController
 
-@synthesize songTitles = _songTitles;
+@synthesize songsFromUserDevice = _songsFromUserDevice;
 
 
 
--(void)setSongTitles:(NSArray *)songTitles
+-(void)setSongsFromUserDevice:(NSArray *)songsFromUserDevice
 {
-    if(_songTitles != songTitles)
+    if(_songsFromUserDevice != songsFromUserDevice)
     {
-        _songTitles = songTitles;
+        _songsFromUserDevice = songsFromUserDevice;
         [self.tableView reloadData];
     }
 }
@@ -30,38 +30,33 @@
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
     return self;
 }
 
+//This method retrieves the songs from the user's library and can be edited with different types of filters
 -(void)querySongs
 {
+    //creates a query for the media items retrieved from the user's device
     MPMediaQuery *everything = [[MPMediaQuery alloc] init];
     NSArray *itemsFromGenericQuery = [everything items];
     
-    self.songTitles = itemsFromGenericQuery;
+    //Assigns the songsFromUserDevice property to the query 
+    self.songsFromUserDevice = itemsFromGenericQuery;
     [self.tableView reloadData];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //call the querySongs method to retrieve the songs from the user's library
     [self querySongs];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    self.songTitles = nil;
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    self.songsFromUserDevice = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -74,8 +69,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"%d", [self.songTitles count]);
-    return [self.songTitles count];
+    return [self.songsFromUserDevice count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -89,16 +83,16 @@
         
     }
     
-    
-    NSString *songTitle = [[self.songTitles objectAtIndex:indexPath.row] valueForProperty:MPMediaItemPropertyTitle];    
+    //Takes the song's title from the MPMediaItem array and assigns it to the cell's label
+    NSString *songTitle = [[self.songsFromUserDevice objectAtIndex:indexPath.row] valueForProperty:MPMediaItemPropertyTitle];    
     cell.textLabel.text = songTitle;
     
-    /*
-     Based on the song title, need to somehow find the image for the album
-     */
-    CGSize size = CGSizeMake(30, 30);
-    MPMediaItemArtwork *artwork = [[self.songTitles objectAtIndex:indexPath.row]valueForProperty:MPMediaItemPropertyArtwork];    
+    //Creates a UIImage for the artwork of the MPMediaItem
+    CGSize size = CGSizeMake(500, 50);
+    MPMediaItemArtwork *artwork = [[self.songsFromUserDevice objectAtIndex:indexPath.row]valueForProperty:MPMediaItemPropertyArtwork];    
     UIImage *artworkImage = [artwork imageWithSize:size];
+    
+    //If there is no image, a generic image is assigned to the item and the image is assigned to the cell's image
     if(!artworkImage)
     {
         artworkImage = [UIImage imageNamed:@"noArtwork.png"];
@@ -109,17 +103,11 @@
 }
 
 
-#pragma mark - Table view delegate
+/*#pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
-}
+    
+}*/
 
 @end
